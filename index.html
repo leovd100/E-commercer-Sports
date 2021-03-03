@@ -20,7 +20,7 @@
                 </div>
 
                 <nav> <!-- Menu de davegação-->
-                    <ul>
+                    <ul id="MenuItems">
                         <li><a href="">HOME</a></li>
                         <li><a href="">Products</a></li>
                         <li><a href="">About</a></li>
@@ -29,6 +29,7 @@
                     </ul>
                 </nav>
                 <img src="./images/cart.png" width="30px" height="30px">
+                <img src="./images/menu.png" class="menu-icon" onclick="menutoggle()">
             </div>
             <!--  **************************************** -->
 
@@ -398,5 +399,24 @@
                 <p class="copyright">Copyright 2020</p>
             </div>
         </div>
+
+        <script>
+
+            var mmenuItems = document.getElementById("MenuItems");
+            mmenuItems.style.maxHeight = "0px";
+            function menutoggle(){
+                if(mmenuItems.style.maxHeight == "0px"){
+                    mmenuItems.style.maxHeight = "200px";
+                }
+                else
+                {
+                    mmenuItems.style.maxHeight = "0px";
+                }
+            }
+
+        </script>
+
+
+
     </body>
 </html>
